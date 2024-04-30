@@ -1,14 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import './src/lang/i18n';
+import { useTranslation } from 'react-i18next';
 
 export default function App() {
+  const { t } = useTranslation();
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Text>{t('GROUP_NAME')}</Text>
     </View>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
