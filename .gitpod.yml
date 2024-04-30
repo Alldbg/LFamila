@@ -1,2 +1,6 @@
 image:
   file: .gitpod.dockerfile
+
+tasks:
+  - before: npm install
+    #command: npm start
