@@ -10,7 +10,7 @@ export default {
     orientation: "portrait",
     icon: "./src/assets/flame.png",
     splash: {
-      image: "./assets/splash.png",
+      image: "./src/assets/splash.png",
       resizeMode: "cover",
       backgroundColor: "#F57C00",
     },
