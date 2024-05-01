@@ -3,7 +3,7 @@ import "dotenv/config";
 export default {
   expo: {
     name: "LFamila",
-    slug: "LFamila-slug",
+    slug: "LFamila",
     privacy: "public",
     platforms: ["ios", "android", "web"],
     version: "1.0.0",
@@ -18,6 +18,14 @@ export default {
       fallbackToCacheTimeout: 0,
     },
     assetBundlePatterns: ["**/*"],
+    android: {
+      adaptiveIcon: {
+        foregroundImage: "./src/assets/adaptive-icon.png",
+        backgroundColor: "#ffffff"
+      },
+      package: "com.b.afellah.LFamila"
+    },
+
     ios: {
       supportsTablet: true,
     },
