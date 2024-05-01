@@ -1,15 +1,6 @@
 import { initializeApp } from 'firebase/app';
 
 
-const firebaseConfig = {
-    apiKey: "AIzaSyChS34DmfkgwWRJsOcvhD28hHbXm_7-7LA",
-    authDomain: "lfamila-1.firebaseapp.com",
-    projectId: "lfamila-1",
-    storageBucket: "lfamila-1.appspot.com",
-    messagingSenderId: "595707843321",
-    appId: "1:595707843321:web:98d7f9083325568e848828",
-    measurementId: "G-PJ15SK9ZTJ"
-};
 
 const app = initializeApp(firebaseConfig);
 
