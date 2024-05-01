@@ -1,23 +1,18 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import { RootNavigator } from "./src/navigation/RootNavigator";
+import { AuthenticatedUserProvider } from "./src/providers";
 import './src/lang/i18n';
-import { useTranslation } from 'react-i18next';
 
-export default function App() {
-  const { t } = useTranslation();
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>{t('GROUP_NAME')}</Text>
-    </View>
+    <AuthenticatedUserProvider>
+      <SafeAreaProvider>
+        <RootNavigator />
+      </SafeAreaProvider>
+    </AuthenticatedUserProvider>
   );
-}
+};
 
+export default App;
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
